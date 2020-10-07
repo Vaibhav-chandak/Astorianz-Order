@@ -160,7 +160,7 @@ a.animated-button:link:after, a.animated-button:visited:after {
 
 a.animated-button:link:hover, a.animated-button:visited:hover {
     color: #FFF;
-    text-shadow: none;
+    text-shadow: none;  
 }
 
 a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
@@ -196,10 +196,51 @@ a.animated-button.victoria-two:after {
     width: auto;
 }
 
+.row2 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@media only screen and (max-width:991px) and (min-width: 769px) {
+    /* For tablets */
+    .zoomed {
+        position: relative;
+        width: 0;
+        height: 0;
+        z-index: -1000;
+    }
+    .row2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .container1 {
         width: 70%;
         margin: 7% auto;
+    }
+    .zoomed {
+        position: relative;
+        width: 0;
+        height: 0;
+        z-index: -1000;
+    }
+    .imageContainer {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .container1 {
+        width: 90%;
+    }
+    .detailsTable {
+        width: 100%;
+    }
+    a.animated-button:link, a.animated-button:visited {
+        margin: 5%;
+    }
+    body {
+        font-size: 16px;
     }
 }
